@@ -9,7 +9,7 @@ function dump($data, $stop=1){
 session_start();
 //подключение к бд
 $pdo = new PDO("mysql:dbname=marlin;host=localhost;", 'root', '');
-dump($_FILES);
+// dump($_FILES);
 //проверка существования файла
 if (empty($_FILES["image"]['name'])){
 	header("Location: task_19.php");
