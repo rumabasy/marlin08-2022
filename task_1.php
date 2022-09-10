@@ -54,27 +54,10 @@
                     <div class="panel-container show">
                         <div class="panel-content">
                             <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
-                                <?php $n = 0; ?>
-                                    <!-- первый правильный вариант решения -->
                                     <?php foreach($states as $state):?>
-                                        <?php if ($n==0):?>
                                                 <h2><?php echo $state['title']; $n=1;?></h2>
                                                 <p class="mb-g"><?php echo $state['content'];?></p>
-                                                <?php else : ?>
-                                                <h3><?php echo $state['title']; ?></h3>
-                                                <p class="mb-g"><?php echo $state['content'];?></p>  
-                                        <?php endif; ?>                    
                                     <?php endforeach; ?>
-                                    <!-- второй правильный вариант решения -->
-                                    <!-- <?php foreach($states as $state):?>
-                                        <?php if ($n==0){
-                                                echo"<h2>".$state['title']."</h2>";
-                                                $n=1;
-                                                echo '<p class="mb-g">'.$state['content'].'</p>';
-                                                } else {
-                                                echo "<h3>".$state['title']."</h3>";
-                                                echo '<p class="mb-g">'.$state['content'].'</p>';} ?>                        
-                                    <?php endforeach; ?> -->
                             </div>
                         </div>
                     </div>
